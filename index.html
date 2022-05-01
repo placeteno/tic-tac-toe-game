@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G&amp;LT | Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="/css/tic-tac.css" />    
+    <link rel="stylesheet" href="/css/tic-tac.css" />
     <link rel="stylesheet" href="/css/overlays.css" />
-    <script src="/js/main.js"></script>
+    <script src="/js/config.js" defer></script>
+    <script src="/js/game.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
@@ -24,7 +26,7 @@
             <a href="#">Form Practice</a>
           </li>
           <li>
-            <a href="#">Tigitc-Tac-Toe</a>
+            <a href="#">Tic-Tac-Toe</a>
           </li>
         </ul>
       </nav>
@@ -37,12 +39,13 @@
         <h2>Choose your name</h2>
         <form class="form-control">
           <div>
-            <label for="playername">Player name</label>
-            <input type="text" name="username" id="playername" />
+            <label for="userinput">Player name</label>
+            <input type="text" name="playername" id="userinput" />
           </div>
+          <p id="errors-message"></p>
           <div class="aside-buttons">
-            <button class="btn btn-alt" type="button">Cancel</button>
-            <button class="btn" type="submit">Confirm</button>
+            <button id="cancel-btn" class="btn btn-alt" type="reset">Cancel</button>
+            <button id="confirm-name-btn" class="btn" type="submit">Confirm</button>
           </div>
         </form>
       </aside>
@@ -54,13 +57,13 @@
             <h2>Player 1</h2>
             <h3 id="playerone" class="name">PLAYER NAME</h3>
             <p>X</p>
-            <button class="btn btn-alt" type="button">Edit</button>
+            <button id="edit-player-one-btn" class="btn btn-alt" type="button">Edit</button>
           </li>
           <li class="player-box">
             <h2>Player 2</h2>
             <h3 id="playertwo" class="name">PLAYER NAME</h3>
             <p>O</p>
-            <button class="btn btn-alt" type="button">Edit</button>
+            <button id="edit-player-two-btn" class="btn btn-alt" type="button">Edit</button>
           </li>
         </ol>
         <button class="btn" type="button">Start New Game</button>

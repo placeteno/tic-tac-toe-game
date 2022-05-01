@@ -4,8 +4,6 @@ body {
   background-color: azure;
 }
 
-
-
 #main-header {
   background: linear-gradient(45deg, lightblue 30%, rgb(101, 163, 255), blue);
   padding: 0 5%;
@@ -18,23 +16,24 @@ nav ul {
   list-style: none;
   display: flex;
 }
+
 nav li {
   display: inline-block;
   margin: 0 20px
 }
+
 nav a {
   padding: 5px 0;
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 100;
 }
 
 nav a:hover {
   color: rgb(217, 237, 255);
   border-bottom: 3px solid rgb(217, 237, 255);
-
 }
 
 .btn {
@@ -57,7 +56,7 @@ nav a:hover {
 .btn-alt {
   background-color: transparent;
   box-shadow: none;
-  color:rgb(3, 70, 255)
+  color: rgb(3, 70, 255)
 }
 
 .btn-alt:hover {
@@ -96,11 +95,13 @@ ol {
   font-size: 1rem;
   margin: .5rem 0;
 }
+
 .player-box h3 {
   font-size: 1.5rem;
   margin: .5rem 0;
   color: rgb(3, 70, 255)
 }
+
 .player-box p {
   font-size: 2rem;
   font-weight: bold;
@@ -128,7 +129,7 @@ ol {
 }
 
 #active-player-name {
-  color:rgb(3, 70, 255);
+  color: rgb(3, 70, 255);
   font-weight: bold;
 }
 
