@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G&amp;LT | Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/css/tic-tac.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="title">
+        <h1>Little Things</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Whale Talk</a>
+          </li>
+          <li>
+            <a href="#">Form Practice</a>
+          </li>
+          <li>
+            <a href="#">Tic-Tac-Toe</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- == GAME CONFIGURATION == -->
+    <main>
+      <!-- OVERLAY TO CHOOSE NAME -->
+      <aside id="username">
+        <h2>Choose your name</h2>
+        <form>
+          <div>
+            <label for="playername">Player name</label>
+            <input type="text" name="username" id="playername" />
+          </div>
+          <div class="aside-buttons">
+            <button class="btn" type="button">Cancel</button>
+            <button class="btn" type="submit">Confirm</button>
+          </div>
+        </form>
+      </aside>
+
+      <!-- PLAYER CONFIGURATION -->
+      <section class="players">
+        <ol>
+          <li class="player-box">
+            <h2>Player 1</h2>
+            <h3 id="playerone" class="name">PLAYER NAME</h3>
+            <p>X</p>
+            <button class="btn" type="button">Edit</button>
+          </li>
+          <li class="player-box">
+            <h2>Player 2</h2>
+            <h3 id="playertwo" class="name">PLAYER NAME</h3>
+            <p>O</p>
+            <button class="btn" type="button">Edit</button>
+          </li>
+        </ol>
+        <button class="btn" type="button">Start New Game</button>
+      </section>
+
+      <!-- BOARD CONFIGURATION -->
+      <section class="game-board">
+        <article>
+          <h3><span id="winner-game">PLAYER NAME</span>, you won!</h3>
+          <p>Click "Start New Game" to start a new game!</p>
+        </article>
+
+        <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+
+        <div class="game-board">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Game created by Jos&eacute; Ra&uacute;l</p>
+    </footer>
+  </body>
 </html>
