@@ -1,3 +1,16 @@
+let editedPlayer = 0;
+
+const players = [
+  {
+    name: '',
+    symbol: 'X'
+  },
+  {
+    name: '',
+    symbol: 'O'
+  }
+];
+
 const backdrop = document.getElementById('backdrop');
 const modal = document.getElementById('username');
 const formElement = document.querySelector('form');
@@ -10,8 +23,8 @@ const cancelConfigBtn = document.getElementById('cancel-btn');
 const confirmConfigBtn = document.getElementById('confirm-name-btn');
 
 
-let playerOne = document.getElementById('playerone').innerText;
-let playerTwo = document.getElementById('playertwo').innerText;
+let playerOne = document.getElementById('playerone');
+let playerTwo = document.getElementById('playertwo');
 
 
 // === EVENT LISTENERS ===

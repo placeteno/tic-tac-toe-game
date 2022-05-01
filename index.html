@@ -44,8 +44,12 @@
           </div>
           <p id="errors-message"></p>
           <div class="aside-buttons">
-            <button id="cancel-btn" class="btn btn-alt" type="reset">Cancel</button>
-            <button id="confirm-name-btn" class="btn" type="submit">Confirm</button>
+            <button id="cancel-btn" class="btn btn-alt" type="reset">
+              Cancel
+            </button>
+            <button id="confirm-name-btn" class="btn" type="submit">
+              Confirm
+            </button>
           </div>
         </form>
       </aside>
@@ -55,15 +59,29 @@
         <ol>
           <li class="player-box">
             <h2>Player 1</h2>
-            <h3 id="playerone" class="name">PLAYER NAME</h3>
+            <h3 id="player-one" class="name">PLAYER NAME</h3>
             <p>X</p>
-            <button id="edit-player-one-btn" class="btn btn-alt" type="button">Edit</button>
+            <button
+              id="edit-player-one-btn"
+              class="btn btn-alt"
+              type="button"
+              data-playerid="one"
+            >
+              Edit
+            </button>
           </li>
           <li class="player-box">
             <h2>Player 2</h2>
-            <h3 id="playertwo" class="name">PLAYER NAME</h3>
+            <h3 id="player-two" class="name">PLAYER NAME</h3>
             <p>O</p>
-            <button id="edit-player-two-btn" class="btn btn-alt" type="button">Edit</button>
+            <button
+              id="edit-player-two-btn"
+              class="btn btn-alt"
+              type="button"
+              data-playerid="two"
+            >
+              Edit
+            </button>
           </li>
         </ol>
         <button class="btn" type="button">Start New Game</button>
