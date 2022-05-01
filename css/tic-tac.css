@@ -1,17 +1,10 @@
 body {
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: azure;
 }
 
-#backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
+
 
 #main-header {
   background: linear-gradient(45deg, lightblue 30%, rgb(101, 163, 255), blue);
@@ -64,79 +57,117 @@ nav a:hover {
 .btn-alt {
   background-color: transparent;
   box-shadow: none;
+  color:rgb(3, 70, 255)
 }
+
 .btn-alt:hover {
   background-color: rgb(189, 207, 255);
 }
 
-#username {
-  position: fixed;
-  top: 20%;
-  left: calc(50% - 300px);
-  width: 600px;
-  border-radius: 10px;
-  background-color:rgb(155, 188, 237);
-  box-shadow: 0 0 4px rgba(163, 163, 163, 0.8);
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-}
-
 .aside-buttons {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px;
+  margin: 1rem;
 }
 
 /* PLAYER CONFIGURATION */
 .players {
-  margin-top: 2rem;
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
   text-align: center;
 }
 
 ol {
-  width: 800px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
   list-style: none;
 }
 
 .player-box {
-  width: 20rem;
-  padding: 1%;
-  text-align: center;
+  margin: 1rem;
+  padding: .5rem;
+  width: 50%;
   background-color: rgb(155, 188, 237);
   border-radius: 10px;
-  box-shadow: .5px .5px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+.player-box h2 {
+  font-size: 1rem;
+  margin: .5rem 0;
+}
 .player-box h3 {
-  font-weight: 400;
+  font-size: 1.5rem;
+  margin: .5rem 0;
+  color: rgb(3, 70, 255)
+}
+.player-box p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .5rem 0;
 }
 
-.start-game-btn {
-  margin-top: 20px;
-}
-.start-game-btn:hover {
-  ;
-}
 
 /* === BOARD CONFIGURATION === */
 
-.game-board {
-  margin: 0 auto;
-  background-color: antiquewhite;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  width: 320px;
+#active-game {
+  text-align: center;
 }
 
-.square {
+#game-over {
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+  background-color: rgb(3, 70, 255);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#active-player-name {
+  color:rgb(3, 70, 255);
+  font-weight: bold;
+}
+
+#game-board {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  justify-content: center;
+  grid-gap: 10px;
+  display: none;
+}
+
+#game-board div {
   width: 100px;
   height: 100px;
-  background-color: rgb(105, 145, 255);
+  background-color: rgb(155, 188, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+#game-board div:hover {
+  background-color: rgb(3, 70, 255);
+  cursor: pointer;
+}
+
+#game-board div.disabled {
+  background-color: rgb(3, 70, 255);
+  color: white;
+  cursor: default;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G&amp;LT | Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="/css/tic-tac.css" />
+    <link rel="stylesheet" href="/css/tic-tac.css" />    
+    <link rel="stylesheet" href="/css/overlays.css" />
+    <script src="/js/main.js"></script>
   </head>
   <body>
     <div id="backdrop"></div>
@@ -31,9 +33,9 @@
     <!-- == GAME CONFIGURATION == -->
     <main>
       <!-- OVERLAY TO CHOOSE NAME -->
-      <aside id="username">
+      <aside class="modal" id="username">
         <h2>Choose your name</h2>
-        <form>
+        <form class="form-control">
           <div>
             <label for="playername">Player name</label>
             <input type="text" name="username" id="playername" />
@@ -61,28 +63,28 @@
             <button class="btn btn-alt" type="button">Edit</button>
           </li>
         </ol>
-        <button class="btn start-game-btn" type="button">Start New Game</button>
+        <button class="btn" type="button">Start New Game</button>
       </section>
 
       <!-- BOARD CONFIGURATION -->
-      <section class="board">
-        <article>
-          <h3><span id="winner-game">PLAYER NAME</span>, you won!</h3>
+      <section id="active-game">
+        <article id="game-over">
+          <h3><span id="winner-name">PLAYER NAME</span>, you won!</h3>
           <p>Click "Start New Game" to start a new game!</p>
         </article>
 
         <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
 
-        <div class="game-board">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+        <div id="game-board">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </section>
     </main>
