@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/tic-tac.css" />
   </head>
   <body>
+    <div id="backdrop"></div>
     <header id="main-header">
       <div class="title">
         <h1>Little Things</h1>
@@ -21,7 +22,7 @@
             <a href="#">Form Practice</a>
           </li>
           <li>
-            <a href="#">Tic-Tac-Toe</a>
+            <a href="#">Tigitc-Tac-Toe</a>
           </li>
         </ul>
       </nav>
@@ -38,7 +39,7 @@
             <input type="text" name="username" id="playername" />
           </div>
           <div class="aside-buttons">
-            <button class="btn" type="button">Cancel</button>
+            <button class="btn btn-alt" type="button">Cancel</button>
             <button class="btn" type="submit">Confirm</button>
           </div>
         </form>
@@ -51,20 +52,20 @@
             <h2>Player 1</h2>
             <h3 id="playerone" class="name">PLAYER NAME</h3>
             <p>X</p>
-            <button class="btn" type="button">Edit</button>
+            <button class="btn btn-alt" type="button">Edit</button>
           </li>
           <li class="player-box">
             <h2>Player 2</h2>
             <h3 id="playertwo" class="name">PLAYER NAME</h3>
             <p>O</p>
-            <button class="btn" type="button">Edit</button>
+            <button class="btn btn-alt" type="button">Edit</button>
           </li>
         </ol>
-        <button class="btn" type="button">Start New Game</button>
+        <button class="btn start-game-btn" type="button">Start New Game</button>
       </section>
 
       <!-- BOARD CONFIGURATION -->
-      <section class="game-board">
+      <section class="board">
         <article>
           <h3><span id="winner-game">PLAYER NAME</span>, you won!</h3>
           <p>Click "Start New Game" to start a new game!</p>
