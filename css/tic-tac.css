@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: azure;
+
+}
+
+#main-header {
+  background: linear-gradient(45deg, lightblue 30%, rgb(101, 163, 255), blue);
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  display: inline-block;
+  margin: 0 20px
+}
+nav a {
+  padding: 5px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+nav a:hover {
+  color: rgb(217, 237, 255);
+  border-bottom: 3px solid rgb(217, 237, 255);
+
+}
+
+.btn {
+  font: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: rgb(105, 145, 255);
+  color: white;
+  border: 1px solid rgb(105, 145, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(91, 135, 255, 0.8);
+  padding: 0.5rem 1.5rem;
+}
+
+aside {
+  background-color:beige;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(163, 163, 163, 0.8);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.aside-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+/* PLAYER CONFIGURATION */
+.players {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+ol {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.player-box {
+  background-color: antiquewhite;
+  width: 20rem;
+  padding: 1%;
+  text-align: center;
+  background-color: rgb(155, 188, 237);
+  border-radius: 10px;
+}
+
+.player-box h3 {
+  font-weight: 400;
+}
