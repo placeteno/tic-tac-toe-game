@@ -84,7 +84,7 @@
             </button>
           </li>
         </ol>
-        <button class="btn" type="button">Start New Game</button>
+        <button class="btn" type="button" id="new-game-btn">Start New Game</button>
       </section>
 
       <!-- BOARD CONFIGURATION -->
@@ -97,15 +97,17 @@
         <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
 
         <div id="game-board">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div data-col="1" data-row="1"></div>
+          <div data-col="1" data-row="2"></div>
+          <div data-col="1" data-row="3"></div>
+
+          <div data-col="2" data-row="1"></div>
+          <div data-col="2" data-row="2"></div>
+          <div data-col="3" data-row="3"></div>
+
+          <div data-col="3" data-row="1"></div>
+          <div data-col="3" data-row="2"></div>
+          <div data-col="3" data-row="3"></div>
         </div>
       </section>
     </main>

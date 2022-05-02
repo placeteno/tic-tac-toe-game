@@ -113,6 +113,7 @@ ol {
 
 #active-game {
   text-align: center;
+  /* display: none; */
 }
 
 #game-over {
@@ -140,7 +141,6 @@ ol {
   grid-template-rows: repeat(3, 6rem);
   justify-content: center;
   grid-gap: 10px;
-  display: none;
 }
 
 #game-board div {
